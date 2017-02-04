@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The combination of these two functions will compute the inverse of any invertible matrix.
+## If the inverse was already calculated, the inverse will be retrieved from cache data. 
+## If the inverse has not been calculated, the function will compute the inverse using the solve function.
 
-## Write a short comment describing this function
+## This function will create a list that contains the elements 
+## defined in the fiction. (set matrix , get matrix, set inverse, get inverse)
 
 makeCacheMatrix <- function(x = matrix(), ...) {
         m <- NULL
@@ -17,7 +19,8 @@ makeCacheMatrix <- function(x = matrix(), ...) {
 }  
 
 
-## Write a short comment describing this function
+## This function will compute the inverse of the matrix. If the inverse was already computed, 
+## the function will retrieve its inverse from cache - skipping the computation.
 
 cacheSolve <- function(x, ...){
         m <- x$getinverse()
